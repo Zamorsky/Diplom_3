@@ -4,46 +4,131 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af903f29-65be-4e4c-819d-9ab2321e4594" name="Changes" comment="">
+    <list default="true" id="af903f29-65be-4e4c-819d-9ab2321e4594" name="Changes" comment="сделал гитигнор">
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/BaseClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/UserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/constants/ApiPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/constants/Path.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/constants/URLs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pom/AccountPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pom/AuthenticationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pom/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pom/ConstructorPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pom/ForgotPasswordPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pom/RegistrationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/DriverFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/UserGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AuthenticationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ConstructorTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ExitFromAccountTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/FromAccountToConstructorTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RegistrationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TransitionToAccountTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Zamorsky"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Zamorsky&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:Zamorsky/Diplom_3.git",
-    "accountId": "1da40871-4a68-4043-b7f2-811bd3dcae7e"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Zamorsky/Diplom_3.git&quot;,
+    &quot;accountId&quot;: &quot;1da40871-4a68-4043-b7f2-811bd3dcae7e&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2pTeReqdF0oVI1jk3R19Lc2dXJR" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.RegistrationTests.executor": "Run",
+    "JUnit.RegistrationTests.testShortPasswordError.executor": "Run",
+    "Maven.Diplom_3 [clean,compile].executor": "Run",
+    "Maven.Diplom_3 [clean,install].executor": "Run",
+    "Maven.Diplom_3 [clean].executor": "Run",
+    "Maven.Diplom_3 [test,-Dbrowser=chrome].executor": "Run",
+    "Maven.Diplom_3 [test,-Dbrowser=yandex].executor": "Run",
+    "Maven.Unknown [clean,install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "develop3",
     "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/cygwin64/home/anton/Projects/Diplom/Diplom_3",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\cygwin64\home\anton\Projects\Diplom\Diplom_3" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\cygwin64\home\anton\Projects\Diplom\Diplom_3\src\test" />
+      <recent name="D:\cygwin64\home\anton\Projects\Diplom\Diplom_3\src\main\resources\drivers" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn clean compile" />
+      <command value="mvn clean install" />
+      <command value="mvn test -Dbrowser=chrome " />
+      <command value="mvn test -Dbrowser=yandex " />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="RegistrationTests.testShortPasswordError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegistrationTests" />
+      <option name="METHOD_NAME" value="testShortPasswordError" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RegistrationTests.testShortPasswordError" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,6 +138,54 @@
       <option name="presentableId" value="Default" />
       <updated>1732794490195</updated>
     </task>
+    <task id="LOCAL-00001" summary="сделал ридми">
+      <option name="closed" value="true" />
+      <created>1732795158942</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732795158942</updated>
+    </task>
+    <task id="LOCAL-00002" summary="сделал ридми">
+      <option name="closed" value="true" />
+      <created>1732795226623</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732795226623</updated>
+    </task>
+    <task id="LOCAL-00003" summary="сделал гитигнор">
+      <option name="closed" value="true" />
+      <created>1732795319569</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732795319570</updated>
+    </task>
+    <task id="LOCAL-00004" summary="сделал гитигнор">
+      <option name="closed" value="true" />
+      <created>1732795335381</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732795335381</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="сделал ридми" />
+    <MESSAGE value="сделал гитигнор" />
+    <option name="LAST_COMMIT_MESSAGE" value="сделал гитигнор" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
