@@ -23,7 +23,7 @@ public abstract class BaseSteps {
         return bearerToken; // Если префикса нет, возвращаем токен как есть
     }
 
-    @Step
+    @Step("Удаление пользователя")
     public static void deleteUser(User user) {
         // Удаляем пользователя, если он был создан
         UserClient userClient = new UserClient();

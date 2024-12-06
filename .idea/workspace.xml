@@ -4,35 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af903f29-65be-4e4c-819d-9ab2321e4594" name="Changes" comment="сделал гитигнор">
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/BaseClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/UserClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/constants/ApiPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/constants/Path.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/constants/URLs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pom/AccountPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pom/AuthenticationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pom/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pom/ConstructorPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pom/ForgotPasswordPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pom/RegistrationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/DriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/UserGen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AuthenticationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ConstructorTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ExitFromAccountTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FromAccountToConstructorTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RegistrationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TransitionToAccountTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="af903f29-65be-4e4c-819d-9ab2321e4594" name="Changes" comment="сделал тест на регистрацию и на короткий пароль">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pom/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegistrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +53,10 @@
   "keyToString": {
     "JUnit.RegistrationTests.executor": "Run",
     "JUnit.RegistrationTests.testShortPasswordError.executor": "Run",
+    "Maven.Diplom_3 [allure:serve].executor": "Run",
     "Maven.Diplom_3 [clean,compile].executor": "Run",
     "Maven.Diplom_3 [clean,install].executor": "Run",
+    "Maven.Diplom_3 [clean,test].executor": "Run",
     "Maven.Diplom_3 [clean].executor": "Run",
     "Maven.Diplom_3 [test,-Dbrowser=chrome].executor": "Run",
     "Maven.Diplom_3 [test,-Dbrowser=yandex].executor": "Run",
@@ -108,8 +87,10 @@
       <command value="mvn clean" />
       <command value="mvn clean compile" />
       <command value="mvn clean install" />
-      <command value="mvn test -Dbrowser=chrome " />
       <command value="mvn test -Dbrowser=yandex " />
+      <command value="mvn test -Dbrowser=chrome " />
+      <command value="mvn allure:serve" />
+      <command value="mvn clean test" />
     </option>
   </component>
   <component name="RunManager">
@@ -170,13 +151,22 @@
       <option name="project" value="LOCAL" />
       <updated>1732795335381</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="сделал тест на регистрацию и на короткий пароль">
+      <option name="closed" value="true" />
+      <created>1733427941052</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733427941052</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="сделал ридми" />
     <MESSAGE value="сделал гитигнор" />
-    <option name="LAST_COMMIT_MESSAGE" value="сделал гитигнор" />
+    <MESSAGE value="сделал тест на регистрацию и на короткий пароль" />
+    <option name="LAST_COMMIT_MESSAGE" value="сделал тест на регистрацию и на короткий пароль" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

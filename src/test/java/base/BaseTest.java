@@ -13,6 +13,7 @@ public class BaseTest {
     protected String relativePath = ""; // Относительный путь страницы
 
     @Before
+    @Step ("Инициируем драйвер и открываем страницу")
     public void setUp() {
         // Читаем параметр браузера из системных свойств (по умолчанию Chrome)
         String browser = System.getProperty("browser", "chrome");
@@ -25,6 +26,7 @@ public class BaseTest {
     }
 
     @After
+    @Step ("Закрываем браузер")
     public void tearDown() {
         if (driver != null) {
             driver.quit();
