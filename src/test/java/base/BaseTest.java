@@ -9,36 +9,33 @@ import org.openqa.selenium.WebDriver;
 
 public class BaseTest {
 
-    protected WebDriver driver;
-    protected String relativePath = ""; // Относительный путь страницы
+    protected static WebDriver driver;
 
     @Before
-    @Step ("Инициируем драйвер и открываем страницу")
+    @Step("Инициируем драйвер")
     public void setUp() {
-        // Читаем параметр браузера из системных свойств (по умолчанию Chrome)
         String browser = System.getProperty("browser", "chrome");
-
-        // Инициализируем драйвер через фабрику
-        driver = DriverFactory.getDriver(browser);
-
-        // Открытие базовой страницы
-        openPage(relativePath);
+        driver = DriverFactory.getDriver(browser); // Инициализация драйвера
     }
 
     @After
-    @Step ("Закрываем браузер")
+    @Step("Закрываем браузер")
     public void tearDown() {
         if (driver != null) {
             driver.quit();
         }
-
-        //надо удалить пользователя через API, если он был создан
     }
+
+
 
     @Step("Открыть страницу: {relativePath}")
     public void openPage(String relativePath) {
-        driver.get(URLs.URL_STELLAR_BURGERS + relativePath);
+        if (driver == null) {
+            throw new IllegalStateException("WebDriver не инициализирован. Проверьте вызов метода setUp().");
+        }
+        driver.get(URLs.URL_STELLAR_BURGERS + relativePath); // Конкатенация полного пути
     }
+
 
 
 }

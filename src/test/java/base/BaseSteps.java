@@ -4,10 +4,16 @@ import api.User;
 import api.UserClient;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 import static org.hamcrest.Matchers.equalTo;
 
 public abstract class BaseSteps {
+
 
     @Step("Получить accessToken")
     public static String getAccessToken(Response response) {
@@ -32,4 +38,19 @@ public abstract class BaseSteps {
         Response responseDelete = userClient.deleteUser(accessToken); // Отправляем запрос на удаление пользователя
         responseDelete.then().body("message", equalTo("User successfully removed"));
     }
+
+    @Step("Ожидание отображения элемента {locator} на странице")
+    public static void waitForVisibility(WebDriver driver, By locator) {
+        new WebDriverWait(driver, 10)
+                .until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+
+
+    @Step("Ожидание, пока элемент не будет содержать указанный текст")
+    public static void waitForText(WebDriver driver, By locator, String text) {
+        new WebDriverWait(driver, 10)
+                .until(ExpectedConditions.textToBe(locator, text));
+    }
+
 }
