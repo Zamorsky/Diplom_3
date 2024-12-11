@@ -1,0 +1,14 @@
+utils\DriverFactory.class
+pom\RegistrationPage.class
+pom\BasePage.class
+api\BaseClient.class
+api\UserClient.class
+constants\URLs.class
+utils\UserGen.class
+constants\ApiPath.class
+pom\PersonalCabinetPage.class
+constants\Path.class
+pom\AuthenticationPage.class
+pom\ForgotPasswordPage.class
+api\User.class
+pom\ConstructorPage.class

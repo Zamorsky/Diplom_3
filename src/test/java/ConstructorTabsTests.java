@@ -92,7 +92,7 @@ public class ConstructorTabsTests extends BaseTest {
         BaseSteps.waitForVisibility(driver, constructorPage.fillingsScroll);
 
         constructorPage.scrollToElement(constructorPage.fillingsScroll);
-
+        BaseSteps.waitForVisibility(driver, constructorPage.fillingsScroll);
         WebElement activeTabElement = driver.findElement(constructorPage.activeTab);
         String activeTabText = activeTabElement.getText();
         Assert.assertEquals("Вкладка 'Начинки' не активна!", "Начинки", activeTabText);
@@ -110,7 +110,7 @@ public class ConstructorTabsTests extends BaseTest {
 
 
         constructorPage.scrollToElement(constructorPage.saucesScroll);
-
+        BaseSteps.waitForVisibility(driver, constructorPage.saucesScroll);
         WebElement activeTabElement = driver.findElement(constructorPage.activeTab);
         String activeTabText = activeTabElement.getText();
         Assert.assertEquals("Вкладка 'Соусы' не активна!", "Соусы", activeTabText);
