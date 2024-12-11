@@ -55,7 +55,6 @@ public class RegistrationPage extends BasePage{
     }
 
 
-
     @Step("Нажать кнопку <личный кабинет>")
     public void clickPersonalCabinetButton() {
         driver.findElement(personalCabinetButton).click();
