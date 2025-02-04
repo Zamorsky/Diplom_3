@@ -1,0 +1,8 @@
+base\BaseTest.class
+ExitFromAccountTests.class
+ConstructorTabsTests.class
+RegistrationTests.class
+PersonalCabinetNavigationTests.class
+FromPersonalCabinetToConstructorTests.class
+AuthenticationTests.class
+base\BaseSteps.class
